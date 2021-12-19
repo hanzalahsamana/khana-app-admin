@@ -1,0 +1,226 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.form-btn{
+  background-color: green !important;
+  width: 160px !important;
+  border-radius: 20px !important;
+  color: white !important;
+  // margin-bottom: 20px  !important;
+  margin-top: 40px !important;
+}
+
+
+.btn-primary:focus {
+  color: #fff;
+  border-color: green;
+  box-shadow: none;
+}
+// Sign in
+
+.Sign-in {
+  max-width: 400px;
+  height: 500px;
+  margin: 200px auto;
+  border-radius: 15px;
+  background: white;
+  border: 1px solid white;
+  box-shadow: 0px 2px 5px 4px lightgrey;
+
+  &--heading {
+      width: 100%;
+      margin-top: 50px;
+      text-align: center;
+  }
+
+  &--Main-heading {
+      font-family: cursive;
+      color: green;
+  }
+
+  &--form form {
+      display: flex !important;
+      justify-content: center !important;
+      flex-flow: wrap;
+  }
+  &--form-input {
+      width: 80%;
+      margin-bottom: 20px !important;
+
+      &-2 {
+          width: 80%;
+      }
+  }
+
+  &--form--details {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      width: 75%;
+      margin: auto;
+
+      &-Remember-me {
+          display: inline-block;
+          margin-bottom: 0.5rem;
+      }
+
+      &-Forget-password {
+          font-size: 12px;
+          margin-top: 19px;
+          color: green;
+      }
+  }
+
+  &-reg-btn {
+      text-align: center;
+
+      & img {
+          border-left: 1px solid gray;
+          padding-left: 4px;
+      }
+  }
+
+  &-redirect {
+      font-family: inherit;
+      text-align: center;
+
+      & span {
+          font-size: 12px;
+          margin-top: 3px;
+          color: #60327cba;
+
+          &:hover {
+              cursor: pointer;
+          }
+      }
+  }
+}
+
+
+.Booking-list {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 200px auto;
+
+  &--header {
+      background: green;
+      display: flex;
+      height: 80px;
+      align-items: center;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      justify-content: flex-end;
+      .MuiFormControl-root.css-1nrlq1o-MuiFormControl-root{
+          height: inherit;
+      }
+      &--select {
+          max-width: 500px;
+          width: 500px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          &--options {
+              height: 40px;
+              outline: none;
+              font-size: 15px;
+              border-radius: 5px;
+              font-weight: 400;
+              padding: 0 5px;
+              color:  green;
+              width: 215px;
+              max-width: 215px;
+          }
+      }
+  }
+
+  &--box {
+      border: 1px solid white;
+      background: white;
+      border-radius: 9px;
+      margin: auto;
+      cursor: pointer;
+      width: 100%;
+
+      &-heading {
+          margin: 0;
+          text-transform: uppercase;
+          color:  green;
+          font-weight: 100;
+          font-family: sans-serif;
+          margin-left: 30px !important;
+      }
+
+      &--t-head th {
+          background-color: white !important;
+          font-size: 18px !important;
+          font-weight: 400;
+          color:  green;
+      }
+
+      &--status {
+          display: flex !important;
+          align-items: center;
+
+          &-inticator {
+              border-radius: 100%;
+              width: 8px;
+              height: 8px;
+              margin-right: 8px;
+          }
+      }
+  }
+}
+
+.Pending {
+  border: #00b506;
+  background: #00b506;
+}
+
+.Complete {
+  border: #ffe139;
+  background: #ffe139;
+}
+
+.Cancel {
+  border: red;
+  background-color: red;
+}
